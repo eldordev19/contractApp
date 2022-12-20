@@ -1,4 +1,4 @@
-package com.example.contractapp.model;
+package com.example.contractapp.model.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,11 +16,13 @@ import java.util.UUID;
 @NoArgsConstructor
 @Data
 @PackagePrivate
-public class Payer {
+public class Status {
+
     @Id
     @GeneratedValue(generator = "uuid2")
     @GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
     UUID id;
 
     String name;
+
 }

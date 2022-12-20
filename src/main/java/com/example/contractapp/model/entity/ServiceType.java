@@ -1,4 +1,4 @@
-package com.example.contractapp.model;
+package com.example.contractapp.model.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,7 +16,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Data
 @PackagePrivate
-public class Specification {
+public class ServiceType {
 
     @Id
     @GeneratedValue(generator = "uuid2")
@@ -24,5 +24,4 @@ public class Specification {
     UUID id;
 
     String name;
-
 }
