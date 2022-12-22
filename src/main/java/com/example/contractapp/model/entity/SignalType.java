@@ -1,5 +1,6 @@
 package com.example.contractapp.model.entity;
 
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -11,12 +12,12 @@ import org.hibernate.annotations.GenericGenerator;
 
 import java.util.UUID;
 
-@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @PackagePrivate
-public class Status {
+@Entity(name = "signal_type")
+public class SignalType {
 
     @Id
     @GeneratedValue(generator = "uuid2")

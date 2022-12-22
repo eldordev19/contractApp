@@ -43,7 +43,7 @@ public class Contract {
     ServiceType serviceType;
 
     @ManyToOne
-    Status documentStatus;
+    StatusContract documentStatus;
 
     LocalDate contractDate;
 
