@@ -1,6 +1,5 @@
 package com.example.contractapp.model.entity;
 
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -16,8 +15,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @Data
 @PackagePrivate
-@Entity(name = "signal_type")
-public class SignalType {
+@Entity
+public class CurrencyType {
 
     @Id
     @GeneratedValue(generator = "uuid2")
@@ -25,7 +24,4 @@ public class SignalType {
     UUID id;
 
     String name;
-
-    String shortName;
-
 }

@@ -16,8 +16,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @Data
 @PackagePrivate
-@Entity(name = "signal_type")
-public class SignalType {
+@Entity
+public class LocalizationType {
 
     @Id
     @GeneratedValue(generator = "uuid2")
@@ -25,7 +25,4 @@ public class SignalType {
     UUID id;
 
     String name;
-
-    String shortName;
-
 }

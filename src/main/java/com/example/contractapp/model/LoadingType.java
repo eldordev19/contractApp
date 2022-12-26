@@ -1,5 +1,6 @@
-package com.example.contractapp.model.entity;
+package com.example.contractapp.model;
 
+import com.example.contractapp.model.entity.*;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -12,49 +13,44 @@ import org.hibernate.annotations.GenericGenerator;
 
 import java.util.UUID;
 
-@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @PackagePrivate
-public class Consumer {
+@Entity
+public class LoadingType {
 
     @Id
     @GeneratedValue(generator = "uuid2")
     @GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
-    UUID    id;
+    UUID id;
 
-    String nameOrganization; // руководящая организация
+    @ManyToOne
+    LocalizationType localizationType;
 
-    String shortName;
+    @ManyToOne
+    SignalType signalType;
 
-    String fullName;
+    @ManyToOne
+    UseType useType;
 
-    String positionOfManager; // должность руководителя
+    @ManyToOne
+    Power power;  // мощность
 
-    String fullNameOfManager;
+    @ManyToOne
+    Fast fast;  // скорость
 
-    String positionOfAccountant;
-
-    String fullNameOfAccountant;
-
-    String phoneNumber;
-
-    String email;
-
-    String fax;
+    @ManyToOne
+    Distance distance;
 
     @ManyToOne
     CurrencyType currencyType;
 
     @ManyToOne
-    Condition condition; // состояние
-
-    @ManyToOne
-    StatusConsumer statusConsumer;
-
-    @ManyToOne
     Belonging belonging; // принадлежность
+
+    @ManyToOne
+    PayType payType;
 
     @ManyToOne
     Activity kindOfActivity; // вид деятельности
@@ -62,12 +58,12 @@ public class Consumer {
     @ManyToOne
     OrganizationalAndLegalActivities organizationalAndLegalActivities; // организационно-правовая деятельность
 
+
+    @ManyToOne
+    TrackView trackView; // вид трассы
+
     @ManyToOne
     Share share; //долевое участие
 
-    @ManyToOne
-    LastMile lastMile; // последняя миля
 
-    @ManyToOne
-    BankDetails bankDetails; // банковские реквизиты
 }
