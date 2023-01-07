@@ -1,10 +1,7 @@
 package com.example.contractapp.model;
 
 import com.example.contractapp.model.entity.*;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -59,6 +56,9 @@ public class Consumer {
 
     @ManyToOne
     Activity kindOfActivity; // вид деятельности
+
+    @ManyToOne
+    GuidanceDocumentType guidanceDocumentType; //руководящий документ
 
     @ManyToOne
     OrganizationalAndLegalActivities organizationalAndLegalActivities; // организационно-правовая деятельность
