@@ -18,7 +18,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Data
 @PackagePrivate
-@Entity
+@Entity(name = "contracts")
 public class Contract {
 
     @Id

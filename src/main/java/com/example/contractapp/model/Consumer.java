@@ -1,5 +1,6 @@
-package com.example.contractapp.model.entity;
+package com.example.contractapp.model;
 
+import com.example.contractapp.model.entity.*;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -12,7 +13,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import java.util.UUID;
 
-@Entity
+@Entity(name = "consumers")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

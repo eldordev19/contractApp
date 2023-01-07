@@ -16,7 +16,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Data
 @PackagePrivate
-@Entity(name = "signal_type")
+@Entity(name = "signal_types")
 public class SignalType {
 
     @Id

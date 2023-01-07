@@ -6,14 +6,16 @@ import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.PackagePrivate;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.util.UUID;
 
-@Entity
+@Entity(name = "terminate_reasons")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@PackagePrivate
 public class TerminateReason {
 
     @Id

@@ -16,7 +16,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Data
 @PackagePrivate
-@Entity
+@Entity(name = "localization_types")
 public class LocalizationType {
 
     @Id

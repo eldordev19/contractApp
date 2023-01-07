@@ -11,7 +11,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import java.util.UUID;
 
-@Entity
+@Entity(name = "service_types")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

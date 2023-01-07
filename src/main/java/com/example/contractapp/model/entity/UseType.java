@@ -15,7 +15,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Data
 @PackagePrivate
-@Entity
+@Entity(name = "use_types")
 public class UseType {
 
     @Id

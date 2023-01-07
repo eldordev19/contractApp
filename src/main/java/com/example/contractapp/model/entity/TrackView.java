@@ -16,7 +16,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Data
 @PackagePrivate
-@Entity
+@Entity(name = "track_views")
 public class TrackView /* вид трассы */ {
 
     @Id

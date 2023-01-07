@@ -17,7 +17,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Data
 @PackagePrivate
-@Entity
+@Entity(name = "loading_types")
 public class LoadingType {
 
     @Id

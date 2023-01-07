@@ -12,7 +12,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import java.util.UUID;
 
-@Entity
+@Entity(name = "bank_details")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

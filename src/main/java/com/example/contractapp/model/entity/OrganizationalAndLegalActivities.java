@@ -12,7 +12,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import java.util.UUID;
 
-@Entity
+@Entity(name = "organizational_legal_activities")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

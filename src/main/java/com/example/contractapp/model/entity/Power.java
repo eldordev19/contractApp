@@ -15,7 +15,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Data
 @PackagePrivate
-@Entity
+@Entity(name = "powers")
 public class Power {
 
     @Id
